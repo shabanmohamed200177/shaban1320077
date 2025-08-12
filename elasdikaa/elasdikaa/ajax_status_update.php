@@ -11,13 +11,30 @@ try {
     }
     
     // التأكد من وجود الإجراء المطلوب
-    if (!isset($_POST['action']) || $_POST['action'] !== 'change_status') {
+    if (!isset($_POST['action']) || !in_array($_POST['action'], ['change_status', 'get_parcel_payment_info'])) {
         throw new Exception('إجراء غير صالح');
     }
     
     // اتصال جديد ومنفصل بقاعدة البيانات
     include 'db_connect.php';
     require_once __DIR__ . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'PaymentService.php';
+    
+    // NEW: دعم جلب معلومات الدفع للشحنة (لمعاينة الخصم المتبقي والصافي)
+    if ($_POST['action'] === 'get_parcel_payment_info') {
+        $parcel_id = isset($_POST['parcel_id']) ? intval($_POST['parcel_id']) : 0;
+        if ($parcel_id <= 0) {
+            echo json_encode(['status' => 'error', 'message' => 'معرف الشحنة غير صالح']);
+            exit;
+        }
+        try {
+            $info = PaymentService::getPaymentInfo($conn, $parcel_id);
+            echo json_encode(['status' => 'success', 'data' => $info]);
+            exit;
+        } catch (Throwable $e) {
+            echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
+            exit;
+        }
+    }
     
     // استخراج البيانات
     $parcel_id = isset($_POST['id']) ? intval($_POST['id']) : 0;

@@ -2102,20 +2102,29 @@ if ($is_ajax_request) {
         // دالة تحميل بيانات الدفع للشحنة
         function loadParcelPaymentData(parcelId) {
             $.ajax({
-                url: 'parcel_list.php',
+                url: 'ajax_status_update.php',
                 type: 'POST',
                 data: { 
-                    action: 'get_parcel_payment_data', 
+                    action: 'get_parcel_payment_info', 
                     parcel_id: parcelId 
                 },
                 dataType: 'json',
                 success: function(response) {
                     if (response.status === 'success') {
-                        const data = response.data;
-                        $('#modal_total_amount_change').text(parseFloat(data.cod_amount || 0).toFixed(2));
-                        $('#modal_paid_amount_change').text(parseFloat(data.paid_amount || 0).toFixed(2));
-                        $('#modal_remaining_amount_change').text(parseFloat((data.cod_amount || 0) - (data.paid_amount || 0)).toFixed(2));
-                        $('#modal_shipping_fees').text(parseFloat(data.shipping_fees || 0).toFixed(2));
+                        const info = response.data;
+                        const data = {
+                          cod_amount: parseFloat(info.cod_amount || info.cod_amount === 0 ? info.cod_amount : (info.parcel && info.parcel.cod_amount) || 0),
+                          paid_amount: parseFloat(info.paid_amount || (info.parcel && info.parcel.paid_amount) || 0),
+                          shipping_fees: parseFloat(info.shipping_fees || (info.parcel && info.parcel.shipping_fees) || 0),
+                          shipping_payer: (info.shipping_payer || (info.parcel && info.parcel.shipping_payer) || 'sender'),
+                          deduction_remaining: parseFloat(info.deduction_remaining || 0)
+                        };
+                        $('#modal_total_amount_change').text(data.cod_amount.toFixed(2));
+                        $('#modal_paid_amount_change').text(data.paid_amount.toFixed(2));
+                        const totalToCollect = (data.shipping_payer === 'recipient') ? (data.cod_amount + data.shipping_fees) : data.cod_amount;
+                        const remainingBalance = Math.max(0, totalToCollect - data.paid_amount);
+                        $('#modal_remaining_amount_change').text(remainingBalance.toFixed(2));
+                        $('#modal_shipping_fees').text(data.shipping_fees.toFixed(2));
                         $('#modal_shipping_payer').text(data.shipping_payer === 'sender' ? 'المرسل' : 'المستلم');
                         
                         // حفظ البيانات للحسابات اللاحقة
@@ -2153,27 +2162,30 @@ if ($is_ajax_request) {
             const currentPaid = parseFloat(data.paid_amount || 0);
             const shippingFees = parseFloat(data.shipping_fees || 0);
             const shippingPayer = data.shipping_payer || 'sender';
+            const deductionRemaining = parseFloat(data.deduction_remaining || 0); // خصم الشحن/عمولة المندوب المتبقي تطبيقه
             
             let customerDue;
             const newPaidAmount = currentPaid + collectedAmount;
             let breakdown = '';
             
             if (shippingPayer === 'sender') {
-                // الشحن على المرسل: المستحق للعميل = المبلغ المُحصل - رسوم الشحن
-                customerDue = Math.max(0, collectedAmount - shippingFees);
+                // الشحن على المرسل: نخصم فقط الجزء المتبقي من الخصم الأساسي (الشحن أو عمولة المندوب) من هذه الدفعة
+                const deductionAppliedNow = Math.min(collectedAmount, deductionRemaining);
+                customerDue = Math.max(0, collectedAmount - deductionAppliedNow);
                 
                 breakdown = `
-                    <div class="alert alert-warning mb-2">الشحن على المرسل - سيتم خصم رسوم الشحن من المستحق</div>
+                    <div class="alert alert-warning mb-2">الشحن على المرسل - سيتم خصم المتبقي من الخصم (${deductionRemaining.toFixed(2)} ج) من هذه الدفعة</div>
                     <div>• قيمة الشحنة: ${codAmount.toFixed(2)} جنيه</div>
                     <div>• المدفوع حالياً: ${currentPaid.toFixed(2)} جنيه</div>
                     <div>• المبلغ المُحصل: ${collectedAmount.toFixed(2)} جنيه</div>
-                    <div>• رسوم الشحن (على المرسل): ${shippingFees.toFixed(2)} جنيه</div>
-                    <div>• سيتم إضافة للمُسجل: ${collectedAmount.toFixed(2)} جنيه</div>
-                    <div>• إجمالي المُسجل: ${newPaidAmount.toFixed(2)} جنيه</div>
-                    <div class="mt-2"><strong>المبلغ المستحق للعميل = ${collectedAmount.toFixed(2)} - ${shippingFees.toFixed(2)} = ${customerDue.toFixed(2)} جنيه</strong></div>
+                    <div>• الخصم المتبقي قبل الدفعة: ${deductionRemaining.toFixed(2)} جنيه</div>
+                    <div>• الخصم المطبق الآن: ${deductionAppliedNow.toFixed(2)} جنيه</div>
+                    <div>• سيتم إضافة للمُسجل: ${customerDue.toFixed(2)} جنيه</div>
+                    <div>• إجمالي المُسجل: ${(currentPaid + customerDue).toFixed(2)} جنيه</div>
+                    <div class="mt-2"><strong>المبلغ المستحق للعميل = ${collectedAmount.toFixed(2)} - ${deductionAppliedNow.toFixed(2)} = ${customerDue.toFixed(2)} جنيه</strong></div>
                 `;
             } else {
-                // الشحن على المستلم: المستحق للعميل = المبلغ المُحصل
+                // الشحن على المستلم: لا يوجد خصم أساسي على الراسل
                 customerDue = collectedAmount;
                 
                 breakdown = `
@@ -2181,7 +2193,6 @@ if ($is_ajax_request) {
                     <div>• قيمة الشحنة: ${codAmount.toFixed(2)} جنيه</div>
                     <div>• المدفوع حالياً: ${currentPaid.toFixed(2)} جنيه</div>
                     <div>• المبلغ المُحصل: ${collectedAmount.toFixed(2)} جنيه</div>
-                    <div>• رسوم الشحن (على المستلم): ${shippingFees.toFixed(2)} جنيه</div>
                     <div>• سيتم إضافة للمُسجل: ${collectedAmount.toFixed(2)} جنيه</div>
                     <div>• إجمالي المُسجل: ${newPaidAmount.toFixed(2)} جنيه</div>
                     <div class="mt-2"><strong>المبلغ المستحق للعميل = ${customerDue.toFixed(2)} جنيه</strong></div>
