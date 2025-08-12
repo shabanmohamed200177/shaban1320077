@@ -136,9 +136,50 @@ class PaymentService {
             }
 
             $deductionAppliedNow = 0.0;
+            $rawAmount = $amount; // سيُسجل كقيمة محصلة عند الباب
             if ($amountIsNet === true) {
-                // المبلغ المدخل صافي للعميل، لا نطبّق أي خصم هنا
-                $effectivePaid = $amount;
+                // المبلغ المدخل صافي للعميل
+                // احسب الخصم المتبقي لتطبيقه لمرة واحدة (الشحن على الراسل أو عمولة المندوب)
+                $alreadyCovered = 0.0;
+                $deductionRemaining = 0.0;
+                // حاول استخدام deduction_applied إن كان موجوداً
+                $hasPCDedLookup = false;
+                if ($colsChk = $conn->query("SHOW COLUMNS FROM parcel_collections LIKE 'deduction_applied'")) {
+                    $hasPCDedLookup = $colsChk->num_rows > 0; $colsChk->close();
+                }
+                if ($hasPCDedLookup) {
+                    $sumDed = $conn->prepare("SELECT COALESCE(SUM(deduction_applied),0) AS d FROM parcel_collections WHERE parcel_id = ?");
+                    $sumDed->bind_param('i', $parcelId);
+                    $sumDed->execute();
+                    $drow = $sumDed->get_result()->fetch_assoc();
+                    $sumDed->close();
+                    $alreadyCovered = min($baseDeduction, (float)($drow['d'] ?? 0));
+                    $deductionRemaining = max(0.0, $baseDeduction - $alreadyCovered);
+                } else {
+                    // fallback: اعتبر ما جمعه المندوب يغطي الخصم الأساسي حتى سقفه
+                    $rawCollectedSoFar = 0.0;
+                    $hasSourceCol = false;
+                    $colRes = $conn->query("SHOW COLUMNS FROM parcel_collections LIKE 'source'");
+                    if ($colRes && $colRes->num_rows > 0) { $hasSourceCol = true; }
+                    if ($colRes) { $colRes->close(); }
+                    if ($hasSourceCol) {
+                        $sumStmt = $conn->prepare("SELECT COALESCE(SUM(amount),0) AS s FROM parcel_collections WHERE parcel_id = ? AND source = 'courier'");
+                        $sumStmt->bind_param('i', $parcelId);
+                    } else {
+                        $sumStmt = $conn->prepare('SELECT COALESCE(SUM(amount),0) AS s FROM parcel_collections WHERE parcel_id = ? AND collected_by_courier_id IS NOT NULL');
+                        $sumStmt->bind_param('i', $parcelId);
+                    }
+                    $sumStmt->execute();
+                    $sumRes = $sumStmt->get_result()->fetch_assoc();
+                    $sumStmt->close();
+                    if ($sumRes && isset($sumRes['s'])) { $rawCollectedSoFar = (float)$sumRes['s']; }
+                    $alreadyCovered = min($baseDeduction, $rawCollectedSoFar);
+                    $deductionRemaining = max(0.0, $baseDeduction - $alreadyCovered);
+                }
+                // طبق الخصم المتبقي لمرة واحدة، لكن لا تنقص الصافي
+                $deductionAppliedNow = $deductionRemaining > 0 ? min($amount, $deductionRemaining) : 0.0;
+                $effectivePaid = $amount; // الصافي يضاف بالكامل للمدفوع للعميل
+                $rawAmount = $amount + $deductionAppliedNow; // ما تم تحصيله عند الباب = الصافي + الخصم المطبق الآن (مرة واحدة)
             } else {
                 // الخصم المتبقي الذي لم يُغطّ بعد عبر الدفعات السابقة (تحصيل المندوب فقط)
                 $rawCollectedSoFar = 0.0;
@@ -167,6 +208,7 @@ class PaymentService {
                 // الجزء المخصوم من هذه الدفعة هو الحد الأدنى بين الدفعة والخصم المتبقي
                 $deductionAppliedNow = min($amount, $deductionRemaining);
                 $effectivePaid = max(0.0, $amount - $deductionAppliedNow);
+                $rawAmount = $amount; // في هذا الفرع المبلغ المدخل هو المبلغ الخام
             }
             $displayPaid = $effectivePaid;
 
@@ -197,29 +239,29 @@ class PaymentService {
             if ($collectedByCourierId !== null && $collectedByCourierId > 0) {
                 if ($hasPCSource && $hasPCEff && $hasPCDed) {
                     $ins = $conn->prepare("INSERT INTO parcel_collections (parcel_id, collected_by_courier_id, amount, effective_amount, deduction_applied, method, source, note) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-                    $ins->bind_param('iidddsss', $parcelId, $collectedByCourierId, $amount, $effectivePaid, $deductionAppliedNow, $method, $src, $nullNote);
+                    $ins->bind_param('iidddsss', $parcelId, $collectedByCourierId, $rawAmount, $effectivePaid, $deductionAppliedNow, $method, $src, $nullNote);
                 } elseif ($hasPCSource) {
                     $ins = $conn->prepare("INSERT INTO parcel_collections (parcel_id, collected_by_courier_id, amount, method, source, note) VALUES (?, ?, ?, ?, ?, ?)");
-                    $ins->bind_param('iidsss', $parcelId, $collectedByCourierId, $amount, $method, $src, $nullNote);
+                    $ins->bind_param('iidsss', $parcelId, $collectedByCourierId, $rawAmount, $method, $src, $nullNote);
                 } else {
                     $ins = $conn->prepare("INSERT INTO parcel_collections (parcel_id, collected_by_courier_id, amount, method, note) VALUES (?, ?, ?, ?, ?)");
-                    $ins->bind_param('iidss', $parcelId, $collectedByCourierId, $amount, $method, $nullNote);
+                    $ins->bind_param('iidss', $parcelId, $collectedByCourierId, $rawAmount, $method, $nullNote);
                 }
             } else {
                 if ($hasPCSource && $hasPCEff && $hasPCDed) {
                     $ins = $conn->prepare("INSERT INTO parcel_collections (parcel_id, collected_by_courier_id, amount, effective_amount, deduction_applied, method, source, note) VALUES (?, NULL, ?, ?, ?, ?, ?, ?)");
-                    $ins->bind_param('dddsss', $amount, $effectivePaid, $deductionAppliedNow, $method, $src, $nullNote);
+                    $ins->bind_param('dddsss', $rawAmount, $effectivePaid, $deductionAppliedNow, $method, $src, $nullNote);
                     // Note: parcel_id already embedded as literal ? is needed; adjust bind
                     // Rebuild with explicit bind including parcel_id
                     $ins->close();
                     $ins = $conn->prepare("INSERT INTO parcel_collections (parcel_id, collected_by_courier_id, amount, effective_amount, deduction_applied, method, source, note) VALUES (?, NULL, ?, ?, ?, ?, ?, ?)");
-                    $ins->bind_param('idddsss', $parcelId, $amount, $effectivePaid, $deductionAppliedNow, $method, $src, $nullNote);
+                    $ins->bind_param('idddsss', $parcelId, $rawAmount, $effectivePaid, $deductionAppliedNow, $method, $src, $nullNote);
                 } elseif ($hasPCSource) {
                     $ins = $conn->prepare("INSERT INTO parcel_collections (parcel_id, collected_by_courier_id, amount, method, source, note) VALUES (?, NULL, ?, ?, ?, ?)");
-                    $ins->bind_param('idsss', $parcelId, $amount, $method, $src, $nullNote);
+                    $ins->bind_param('idsss', $parcelId, $rawAmount, $method, $src, $nullNote);
                 } else {
                     $ins = $conn->prepare("INSERT INTO parcel_collections (parcel_id, collected_by_courier_id, amount, method, note) VALUES (?, NULL, ?, ?, ?)");
-                    $ins->bind_param('idss', $parcelId, $amount, $method, $nullNote);
+                    $ins->bind_param('idss', $parcelId, $rawAmount, $method, $nullNote);
                 }
             }
             $ins->execute();
@@ -280,7 +322,7 @@ class PaymentService {
             }
 
             // Track
-            $remarks = 'تحصيل: ' . number_format($amount, 2)
+            $remarks = 'تحصيل: ' . number_format($rawAmount, 2)
                 . ' ج.م | الصافي المضاف: ' . number_format($displayPaid, 2)
                 . ' ج.م | خصم مطبق: ' . number_format($deductionAppliedNow, 2)
                 . ' ج.م | إجمالي الصافي: ' . number_format($newPaid, 2)
@@ -298,7 +340,7 @@ class PaymentService {
                 'remaining_balance' => $newRemaining,
                 'payment_status' => $newPaymentStatus,
                 'new_status' => $newStatus,
-                'raw_amount_received' => $amount,
+                'raw_amount_received' => $rawAmount,
                 'deduction_applied_now' => $deductionAppliedNow,
                 'applied_deductions' => [
                     'context' => $shipmentDirection,
