@@ -385,9 +385,30 @@ if ($status_result) {
                             <div class="form-group">
                                 <label for="note" class="control-label">ملاحظات حول الشحنة</label>
                                 <textarea class="form-control simple-textarea" id="note" name="note" rows="3" placeholder="اكتب ملاحظاتك حول الشحنة هنا..."><?php echo $is_edit_mode ? htmlspecialchars($parcel_data['notes'] ?? '') : ''; ?></textarea>
+                                                            </div>
+                                <div class="box-section mt-3">
+                                    <div class="box-title"><span class="box-icon"><i class="fa-solid fa-sack-dollar"></i></span> الملخص المالي</div>
+                                    <div class="row g-3">
+                                        <div class="col-md-3">
+                                            <label class="form-label">الإجمالي المطلوب من المستلم</label>
+                                            <input type="text" id="np_total_to_collect" class="form-control readonly-field" readonly value="0.00">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">المدفوع حتى الآن</label>
+                                            <input type="text" id="np_paid_amount" class="form-control readonly-field" readonly value="0.00">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">المتبقي</label>
+                                            <input type="text" id="np_remaining" class="form-control readonly-field" readonly value="0.00">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">حالة الدفع</label>
+                                            <input type="text" id="np_payment_status" class="form-control readonly-field" readonly value="غير مدفوع">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
+                            <div class="col-md-6">
                             <!-- الحقول المالية لإرسال شحنة إلى وكيل -->
                             <div id="to_agent_financial_fields" class="<?php echo ($is_edit_mode && ($parcel_data['shipment_direction'] ?? 'to_agent') == 'from_agent') ? 'd-none' : ''; ?>">
                                 <div class="form-group">
@@ -1189,6 +1210,37 @@ $(document).ready(function(){
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })
+
+    // تحميل الملخص المالي عند فتح الصفحة (وضع التعديل فقط)
+    function npLoadFinancialSummary(){
+        const parcelId = <?php echo $is_edit_mode ? intval($parcel_data['id']) : 0; ?>;
+        if (!parcelId) return;
+        $.ajax({
+            url: 'ajax_status_update.php',
+            method: 'POST',
+            data: { action: 'get_parcel_payment_info', parcel_id: parcelId },
+            dataType: 'json',
+            success: function(resp){
+                if (resp && resp.status === 'success'){
+                    const d = resp.data;
+                    const total = parseFloat(d.total_to_collect || (d.parcel && d.parcel.total_to_collect) || 0);
+                    const paid  = parseFloat(d.paid_amount || (d.parcel && d.parcel.paid_amount) || 0);
+                    const remaining = Math.max(0, total - paid);
+                    const pstatus = d.payment_status || (d.parcel && d.parcel.payment_status) || 'unpaid';
+                    $('#np_total_to_collect').val(total.toFixed(2));
+                    $('#np_paid_amount').val(paid.toFixed(2));
+                    $('#np_remaining').val(remaining.toFixed(2));
+                    $('#np_payment_status').val(pstatus === 'paid' ? 'مدفوع كامل' : (pstatus === 'partial_paid' ? 'مدفوع جزئي' : 'غير مدفوع'));
+                }
+            }
+        });
+    }
+    npLoadFinancialSummary();
+
+    // بعد تغيير الحالة بنجاح، أعد تحميل الملخص المالي
+    $(document).on('click', '#btn_change_status_now', function(){
+        setTimeout(npLoadFinancialSummary, 300);
+    });
 });
 </script>
 </body>
