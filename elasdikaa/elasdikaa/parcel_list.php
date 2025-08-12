@@ -1420,15 +1420,18 @@ if ($is_ajax_request) {
                                     <th class="text-center no-print" width="4%">
                                         <input type="checkbox" id="selectAll" class="form-check-input">
                                     </th>
-                                    <th width="15%">رقم الشحنة</th>
-                                    <th width="20%">بيانات الراسل</th>
-                                    <th width="15%">اسم المستلم</th>
-                                    <th width="10%">الحالة</th>
-                                    <th width="10%">القيمة (COD)</th>
-                                    <th width="10%">المبلغ المدفوع</th>
-
-                                    <th width="10%">التاريخ</th>
-                                    <th width="5%" class="no-print">الإجراءات</th>
+                                    <th>رقم الشحنة</th>
+                                    <th>اسم الراسل</th>
+                                    <th>اسم المستلم</th>
+                                    <th>رقم المستلم</th>
+                                    <th>المحافظة</th>
+                                    <th>المنطقة</th>
+                                    <th>التكلفة الكلية</th>
+                                    <th>المدفوع</th>
+                                    <th>تكلفة الشحن</th>
+                                    <th>المستحق للراسل</th>
+                                    <th>حالة الشحنة</th>
+                                    <th class="no-print">الإجراءات</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1457,38 +1460,40 @@ if ($is_ajax_request) {
                                         // استلام من وكيل: صافي الوكيل بعد خصم عمولة المندوب
                                         $net_for_display = $cod_amount - $delivery_agent_fee;
                                     }
+                                    // التكلفة الكلية المتعارف عليها = قيمة الشحنة + الشحن
+                                    $total_cost_display = ($cod_amount + $shipping_fees);
+                                    // المبلغ المدفوع (صافي بعد الخصومات في النظام الجديد)
+                                    $paid_amount = floatval($row['paid_amount'] ?? 0);
+                                    if ($paid_amount <= 0 && isset($row['partial_paid'])) {
+                                        $paid_amount = floatval($row['partial_paid']);
+                                    }
+                                    // المستحق للراسل/الوكيل الآن: إن وُجد دفع جزئي/كامل نعرض الصافي المدفوع، وإلا نعرض الصافي المتوقع الكامل
+                                    $due_to_sender = $paid_amount > 0 ? $paid_amount : $net_for_display;
                                 ?>
                                 <tr>
                                     <td class="text-center no-print">
                                         <input type="checkbox" class="form-check-input shipment-checkbox" value="<?php echo $row['id']; ?>">
                                     </td>
                                     <td>
-                                        <div class="tracking-info">
-                                            <strong class="text-primary"><?php echo htmlspecialchars($row['tracking_number']); ?></strong>
-                                            <div class="text-muted small"><?php echo date('Y-m-d', strtotime($row['date_created'])); ?></div>
-                                        </div>
+                                        <strong class="text-primary"><?php echo htmlspecialchars($row['tracking_number']); ?></strong>
                                     </td>
-                                    <td>
-                                        <div class="sender-info">
-                                            <div class="fw-bold"><?php echo htmlspecialchars($row['sender_name']); ?></div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-phone"></i> <?php echo htmlspecialchars($row['sender_phone']); ?>
-                                            </div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-map-marker-alt"></i> <?php echo htmlspecialchars($row['sender_gov_name'] ?? 'N/A'); ?>
-                                            </div>
-                                        </div>
+                                    <td><?php echo htmlspecialchars($row['sender_name']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_name']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_phone']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_gov_name'] ?? 'N/A'); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_area_name'] ?? 'N/A'); ?></td>
+                                    <td class="text-center">
+                                        <strong><?php echo number_format($total_cost_display, 2); ?></strong>
                                     </td>
-                                    <td>
-                                        <div class="recipient-info">
-                                            <div class="fw-bold"><?php echo htmlspecialchars($row['recipient_name']); ?></div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-phone"></i> <?php echo htmlspecialchars($row['recipient_phone']); ?>
-                                            </div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-map-marker-alt"></i> <?php echo htmlspecialchars($row['recipient_area_name'] ?? 'N/A'); ?> - <?php echo htmlspecialchars($row['recipient_gov_name'] ?? 'N/A'); ?>
-                                            </div>
-                                        </div>
+                                    <td class="text-center">
+                                        <strong class="<?php echo $paid_amount > 0 ? 'text-success' : 'text-muted'; ?>"><?php echo number_format($paid_amount, 2); ?></strong>
+                                    </td>
+                                    <td class="text-center">
+                                        <div><strong><?php echo number_format($shipping_fees, 2); ?></strong></div>
+                                        <small class="text-muted"><?php echo ($shipping_payer === 'sender') ? 'على المرسل' : 'على المستلم'; ?></small>
+                                    </td>
+                                    <td class="text-center">
+                                        <strong class="text-primary"><?php echo number_format(max(0, $due_to_sender), 2); ?></strong>
                                     </td>
                                     <td class="text-center">
                                         <?php
@@ -1516,62 +1521,17 @@ if ($is_ajax_request) {
                                         echo "<span class='badge ".$badge_class."'>".$status_name."</span>";
                                         ?>
                                     </td>
-                                    <td class="text-center">
-                                        <div class="text-center">
-                                            <strong class="text-primary d-block"><?php echo number_format($row['cod_amount'] ?? 0, 2); ?> جنيه</strong>
-                                            <small class="text-muted">قيمة الشحنة</small>
-                                        </div>
-                                    </td>
-                                    
-                                    <td class="text-center">
-                                        <div class="text-center">
-                                            <?php 
-                                            // عرض المبلغ المدفوع: استخدم paid_amount أولاً، وإن كان صفرًا واستخدم النظام القديم فاعرض partial_paid
-                                            $paid_amount = floatval($row['paid_amount'] ?? 0);
-                                            if ($paid_amount <= 0 && isset($row['partial_paid'])) {
-                                                $paid_amount = floatval($row['partial_paid']);
-                                            }
-                                            if ($paid_amount > 0): ?>
-                                                <strong class="text-success d-block"><?php echo number_format($paid_amount, 2); ?> جنيه</strong>
-                                                <small class="text-muted">محصل</small>
-                                            <?php else: ?>
-                                                <span class="text-muted d-block">0.00 جنيه</span>
-                                                <small class="text-muted">لم يحصل</small>
-                                            <?php endif; ?>
-                                        </div>
-                                    </td>
-
-
-                                    <td class="text-center">
-                                        <?php echo date('Y-m-d', strtotime($row['date_created'])); ?>
-                                    </td>
-                                    <td class="text-center">
+                                    <td class="text-center no-print">
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn btn-primary view-details-btn" data-id="<?php echo $row['id']; ?>" title="عرض التفاصيل">
                                                 <i class="fas fa-eye"></i>
                                             </button>
-                                            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <button type="button" class="dropdown-item change_status_btn" data-id="<?php echo $row['id'] ?>">
-                                                            <i class="fas fa-sync-alt text-warning"></i> تغيير الحالة
-                                                        </button>
-                                                    </li>
-
-                                                    <li>
-                                                        <button type="button" class="dropdown-item view_parcel_options_btn" data-id="<?php echo $row['id'] ?>">
-                                                            <i class="fas fa-print text-info"></i> طباعة
-                                                        </button>
-                                                    </li>
-                                                    <li><hr class="dropdown-divider"></li>
-                                                    <li>
-                                                        <button type="button" class="dropdown-item delete_parcel_btn text-danger" data-id="<?php echo $row['id'] ?>">
-                                                            <i class="fas fa-trash"></i> حذف
-                                                        </button>
-                                                    </li>
-                                                </ul>
+                                            <a class="btn btn-info" href="print_label.php?id=<?php echo $row['id']; ?>" target="_blank" title="طباعة الشحنة">
+                                                <i class="fas fa-print"></i>
+                                            </a>
+                                            <a class="btn btn-warning" href="new_parcel.php?id=<?php echo $row['id']; ?>" title="تعديل الشحنة">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
@@ -1579,7 +1539,7 @@ if ($is_ajax_request) {
                                 
                                 <?php if ($qry->num_rows === 0): ?>
                                     <tr>
-                                        <td colspan="8" class="text-center py-4">
+                                        <td colspan="13" class="text-center py-4">
                                             <i class="fas fa-search"></i> لا توجد شحنات مطابقة لمعايير البحث
                                         </td>
                                     </tr>
