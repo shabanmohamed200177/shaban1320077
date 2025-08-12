@@ -785,6 +785,9 @@ if ($is_ajax_request) {
                                             <button type="button" class="btn btn-primary view-details-btn" data-id="<?php echo $row['id']; ?>" title="عرض التفاصيل">
                                                 <i class="fas fa-eye"></i>
                                             </button>
+                                            <button type="button" class="btn btn-success change_status_btn" data-id="<?php echo $row['id']; ?>" title="تغيير الحالة">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </button>
                                             <a class="btn btn-info" href="print_label.php?id=<?php echo $row['id']; ?>" target="_blank" title="طباعة الشحنة">
                                                 <i class="fas fa-print"></i>
                                             </a>
@@ -1465,6 +1468,9 @@ if ($is_ajax_request) {
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn btn-primary view-details-btn" data-id="<?php echo $row['id']; ?>" title="عرض التفاصيل">
                                                 <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-success change_status_btn" data-id="<?php echo $row['id']; ?>" title="تغيير الحالة">
+                                                <i class="fas fa-sync-alt"></i>
                                             </button>
                                             <a class="btn btn-info" href="print_label.php?id=<?php echo $row['id']; ?>" target="_blank" title="طباعة الشحنة">
                                                 <i class="fas fa-print"></i>
