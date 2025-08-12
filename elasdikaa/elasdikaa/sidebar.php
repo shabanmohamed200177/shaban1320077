@@ -275,6 +275,12 @@
               </a>
             </li>
             <li class="nav-item">
+              <a href="./customer_settlement.php" class="nav-link nav-customer-settlement tree-item text-end">
+                <i class="nav-icon fas fa-hand-holding-usd"></i>
+                <p>تسوية حساب عميل</p>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="./index.php?page=financial_reports" class="nav-link nav-financial_reports tree-item text-end">
                 <i class="nav-icon fas fa-chart-line"></i>
                 <p>التقارير المالية</p>
@@ -303,6 +309,7 @@
   $(document).ready(function(){
     var page = '<?php echo isset($_GET['page']) ? $_GET['page'] : 'home' ?>';
     var s = '<?php echo isset($_GET['s']) ? $_GET['s'] : '' ?>'; // Keep 's' for backward compatibility if needed elsewhere
+    $('.nav-link.nav-customer-settlement').addClass('active');
     var statusParam = '<?php echo isset($_GET['status']) ? $_GET['status'] : '' ?>'; // Get the status parameter
 
     if(statusParam !== '') { // Prioritize status parameter for parcel_list
