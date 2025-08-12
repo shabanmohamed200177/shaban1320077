@@ -729,72 +729,37 @@ if ($is_ajax_request) {
             // استلام من وكيل: صافي الوكيل بعد خصم عمولة المندوب
             $net_for_display = $cod_amount - $delivery_agent_fee;
         }
+        // حسابات إضافية للعرض وفق الأعمدة الجديدة
+        $total_cost_display = ($cod_amount + $shipping_fees);
+        $paid_amount = floatval($row['paid_amount'] ?? 0);
+        if ($paid_amount <= 0 && isset($row['partial_paid'])) {
+            $paid_amount = floatval($row['partial_paid']);
+        }
+        $due_to_sender = $paid_amount > 0 ? $paid_amount : $net_for_display;
     ?>
                                     <tr>
                                     <td class="text-center no-print">
                                         <input type="checkbox" class="form-check-input shipment-checkbox" value="<?php echo $row['id']; ?>">
                                     </td>
                                     <td>
-                                        <div class="tracking-info">
-                                            <strong class="text-primary"><?php echo htmlspecialchars($row['tracking_number']); ?></strong>
-                                            <div class="text-muted small"><?php echo date('Y-m-d', strtotime($row['date_created'])); ?></div>
-                                        </div>
+                                        <strong class="text-primary"><?php echo htmlspecialchars($row['tracking_number']); ?></strong>
                                     </td>
-                                    <td>
-                                        <div class="sender-info">
-                                            <div class="fw-bold">
-                                                <?php echo htmlspecialchars($row['sender_name']); ?>
-                                                <?php if (isset($row['client_id_fk']) && $row['client_id_fk']): ?>
-                                                    <a href="customer_profile.php?id=<?php echo $row['client_id_fk']; ?>" 
-                                                       class="btn btn-sm btn-outline-primary ms-2" 
-                                                       title="عرض ملف العميل" 
-                                                       target="_blank">
-                                                        <i class="fas fa-user-circle"></i>
-                                                    </a>
-                                                <?php endif; ?>
-                                            </div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-phone"></i> <?php echo htmlspecialchars($row['sender_phone']); ?>
-                                            </div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-map-marker-alt"></i> <?php echo htmlspecialchars($row['sender_gov_name'] ?? 'N/A'); ?>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="recipient-info">
-                                            <div class="fw-bold"><?php echo htmlspecialchars($row['recipient_name']); ?></div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-phone"></i> <?php echo htmlspecialchars($row['recipient_phone']); ?>
-                                            </div>
-                                            <div class="text-muted small">
-                                                <i class="fas fa-map-marker-alt"></i> <?php echo htmlspecialchars($row['recipient_area_name'] ?? 'N/A'); ?> - <?php echo htmlspecialchars($row['recipient_gov_name'] ?? 'N/A'); ?>
-                                            </div>
-                                        </div>
-                                    </td>
+                                    <td><?php echo htmlspecialchars($row['sender_name']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_name']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_phone']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_gov_name'] ?? 'N/A'); ?></td>
+                                    <td><?php echo htmlspecialchars($row['recipient_area_name'] ?? 'N/A'); ?></td>
+                                    <td class="text-center"><strong><?php echo number_format(($cod_amount + $shipping_fees), 2); ?></strong></td>
+                                    <td class="text-center"><strong class="<?php echo ($paid_amount > 0 ? 'text-success' : 'text-muted'); ?>"><?php echo number_format($paid_amount, 2); ?></strong></td>
                                     <td class="text-center">
-                                        <?php
-                                        $shipment_direction = $row['shipment_direction'] ?? 'to_agent';
-                                        if ($shipment_direction == 'to_agent') {
-                                            echo '<span class="badge bg-primary">إرسال إلى وكيل</span>';
-                                            } else {
-                                            echo '<span class="badge bg-info">استلام من وكيل</span>';
-                                        }
-                                        ?>
+                                        <div><strong><?php echo number_format($shipping_fees, 2); ?></strong></div>
+                                        <small class="text-muted"><?php echo ($shipping_payer === 'sender') ? 'على المرسل' : 'على المستلم'; ?></small>
                                     </td>
-                                    <td class="text-center">
-                                        <?php if (!empty($row['courier_name'])): ?>
-                                            <span class="badge bg-primary"><?php echo htmlspecialchars($row['courier_name']); ?></span>
-                                        <?php else: ?>
-                                            <span class="badge bg-secondary">لا يوجد مندوب</span>
-                                        <?php endif; ?>
-                                    </td>
+                                    <td class="text-center"><strong class="text-primary"><?php echo number_format(max(0, ($paid_amount > 0 ? $paid_amount : $net_for_display)), 2); ?></strong></td>
                                     <td class="text-center">
                                         <?php
                                         $status_val = isset($row['status']) ? intval($row['status']) : 1;
                                         $status_name = $status_arr[$status_val] ?? "غير معروف";
-                                        
-                                        // تحديد لون badge بناءً على الحالة
                                         $badge_class = '';
                                         switch($status_val) {
                                             case 1: $badge_class = 'bg-primary'; break;
@@ -811,46 +776,20 @@ if ($is_ajax_request) {
                                             case 12: $badge_class = 'bg-dark'; break;
                                             default: $badge_class = 'bg-secondary'; break;
                                         }
-                                        
                                         echo "<span class='badge ".$badge_class."'>".$status_name."</span>";
                                         ?>
                                     </td>
-                                    <td class="text-center">
-                                                <strong class="text-primary"><?php echo number_format($row['cod_amount'] ?? 0, 2); ?> جنيه</strong>
-                                    </td>
-                                    <td class="text-center">
-                                        <strong class="text-info"><?php echo number_format($net_for_display, 2); ?> جنيه</strong>
-                                    </td>
-                                    <td class="text-center">
-                                                <strong class="text-success"><?php echo number_format($total_to_collect_display, 2); ?> جنيه</strong>
-                                    </td>
-                                    <td class="text-center">
+                                    <td class="text-center no-print">
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn btn-primary view-details-btn" data-id="<?php echo $row['id']; ?>" title="عرض التفاصيل">
-                                            <i class="fas fa-eye"></i>
-                                        </button>
-                                            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
-                                                <i class="fas fa-ellipsis-v"></i>
+                                                <i class="fas fa-eye"></i>
                                             </button>
-                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                <li>
-                                                    <a href="index.php?page=new_parcel&id=<?php echo $row['id'] ?>" class="dropdown-item">
-                                                        <i class="fas fa-edit text-primary"></i> تعديل الشحنة
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <button type="button" class="dropdown-item change_status_btn" data-id="<?php echo $row['id'] ?>">
-                                                        <i class="fas fa-sync-alt text-warning"></i> تغيير الحالة
-                                                    </button>
-                                                </li>
-
-                                                <li><hr class="dropdown-divider"></li>
-                                                <li>
-                                                    <button type="button" class="dropdown-item delete_parcel_btn text-danger" data-id="<?php echo $row['id'] ?>">
-                                                        <i class="fas fa-trash"></i> حذف
-                                                    </button>
-                                                </li>
-                                            </ul>
+                                            <a class="btn btn-info" href="print_label.php?id=<?php echo $row['id']; ?>" target="_blank" title="طباعة الشحنة">
+                                                <i class="fas fa-print"></i>
+                                            </a>
+                                            <a class="btn btn-warning" href="new_parcel.php?id=<?php echo $row['id']; ?>" title="تعديل الشحنة">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>
