@@ -364,6 +364,23 @@ if ($status_result) {
                                         <option value="<?php echo htmlspecialchars($s['id']); ?>" <?php echo ($is_edit_mode && $parcel_data['status'] == $s['id']) ? 'selected' : (($s['id'] == 1 && !$is_edit_mode) ? 'selected' : ''); ?>><?php echo htmlspecialchars($s['name_ar']); ?></option>
                                     <?php endforeach; ?>
                                 </select>
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <button type="button" class="btn btn-success btn-sm" id="btn_change_status_now">
+                                        <i class="fas fa-sync-alt"></i> تغيير الحالة الآن
+                                    </button>
+                                    <span class="badge bg-secondary" id="np_current_status_badge">
+                                        <?php
+                                            if ($is_edit_mode) {
+                                                $sv = intval($parcel_data['status'] ?? 1);
+                                                $sn = 'غير معروف';
+                                                foreach ($parcel_statuses as $ps) { if (intval($ps['id']) === $sv) { $sn = $ps['name_ar']; break; } }
+                                                echo htmlspecialchars($sn);
+                                            } else {
+                                                echo 'قيد التنفيذ';
+                                            }
+                                        ?>
+                                    </span>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="note" class="control-label">ملاحظات حول الشحنة</label>
@@ -731,6 +748,8 @@ $(document).ready(function(){
     $(document).on('change', '#parcel_status', function() {
         const val = String($(this).val());
         const text = String($('#parcel_status option:selected').text() || '').trim();
+        // تحديث شارة الحالة الحالية
+        $('#np_current_status_badge').text(text || '');
         // يدعم حالتين: لو كان رقم الحالة "6" أو كان نص الحالة يحتوي كلمة جزئي (للتوافق مع اختلاف IDs)
         const isPartial = (val === '6') || text.indexOf('جزئي') !== -1 || text.indexOf('partial') !== -1;
         if (isPartial) {
@@ -1117,6 +1136,51 @@ $(document).ready(function(){
             },
             complete: function() {
                 submitBtn.prop('disabled', false).html('<i class="fas fa-save"></i> <?php echo $is_edit_mode ? 'تحديث الشحنة' : 'حفظ الشحنة وطباعة البوليصة'; ?>');
+            }
+        });
+    });
+
+    // زر تغيير الحالة الفعلي من صفحة إضافة/تعديل الشحنة (عند وضع التعديل)
+    $(document).on('click', '#btn_change_status_now', function(){
+        const parcelId = <?php echo $is_edit_mode ? intval($parcel_data['id']) : 0; ?>;
+        if (!parcelId) {
+            alert('يجب حفظ الشحنة أولاً قبل تغيير الحالة.');
+            return;
+        }
+        const newStatus = $('#parcel_status').val();
+        if (!newStatus) {
+            alert('اختر الحالة أولاً');
+            return;
+        }
+        const reasonId = $('#status_reason_id').val() || '';
+        const reasonNote = $('#status_reason_note_hidden').val() || '';
+
+        const formData = {
+            action: 'change_status',
+            id: parcelId,
+            new_status: newStatus,
+            status_reason_id: reasonId,
+            status_reason_note: reasonNote,
+            remarks: reasonNote
+        };
+        $.ajax({
+            url: 'ajax_status_update.php',
+            method: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function(resp){
+                if (resp && resp.status === 'success') {
+                    // تحديث الشارة
+                    const text = $('#parcel_status option:selected').text();
+                    $('#np_current_status_badge').text(text);
+                    alert('تم تحديث حالة الشحنة بنجاح');
+                } else {
+                    alert(resp && resp.message ? resp.message : 'فشل تحديث الحالة');
+                }
+            },
+            error: function(xhr){
+                alert('فشل الاتصال بالخادم لتحديث الحالة');
+                console.error(xhr.responseText);
             }
         });
     });
