@@ -1,0 +1,42 @@
+{
+    "sEmptyTable": "لا توجد بيانات متاحة في الجدول",
+    "sInfo": "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+    "sInfoEmpty": "يعرض 0 إلى 0 من أصل 0 سجل",
+    "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+    "sInfoPostFix": "",
+    "sInfoThousands": ",",
+    "sLengthMenu": "أظهر _MENU_ مدخلات",
+    "sLoadingRecords": "جاري التحميل...",
+    "sProcessing": "جاري التطبيق...",
+    "sSearch": "ابحث:",
+    "sSearchPlaceholder": "ابحث...",
+    "sThousands": ",",
+    "sUrl": "",
+    "sZeroRecords": "لم يعثر على أية سجلات",
+    "oPaginate": {
+        "sFirst": "الأول",
+        "sPrevious": "السابق",
+        "sNext": "التالي",
+        "sLast": "الأخير"
+    },
+    "oAria": {
+        "sSortAscending": ": تفعيل لترتيب العمود تصاعدياً",
+        "sSortDescending": ": تفعيل لترتيب العمود تنازلياً"
+    },
+    "select": {
+        "rows": {
+            "_": "تحديد %d صفوف",
+            "0": "انقر على صف لتحديده",
+            "1": "تحديد صف واحد"
+        }
+    },
+    "buttons": {
+        "print": "طباعة",
+        "copy": "نسخ",
+        "copyTitle": "نسخ إلى الحافظة",
+        "copySuccess": {
+            "_": "تم نسخ %d صفوف إلى الحافظة",
+            "1": "تم نسخ صف واحد إلى الحافظة"
+        }
+    }
+}

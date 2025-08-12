@@ -1,0 +1,1023 @@
+[2025-08-11 03:43:12] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:13] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:16] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:16] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:22] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:22] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:24] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:26] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:28] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:43:28] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:44:13] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:44:28] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:44:58] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:45:28] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:45:43] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:46:28] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:46:28] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:13] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:18] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:18] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:21] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:21] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:48] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:48] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:51] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:51] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:54] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:47:54] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:48:24] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 03:48:24] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'company_cut_amount' in 'field list' in C:\xampp\htdocs\newwww\courier\api\stats.php on line 78
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\stats.php(78): mysqli->prepare('SELECT \r\n      ...')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:24:10] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:24:10] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:06] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:06] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:11] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:11] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:13] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:13] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:26:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:27:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:27:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:27:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:27:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 9
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(9): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:28:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:28:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:28:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:28:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:28:47] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:28:47] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:29:17] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:29:17] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:29:47] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:29:47] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:30:17] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:30:17] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:30:47] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:30:47] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:31:17] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:31:17] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:31:41] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:31:41] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:31:43] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:31:43] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:32:03] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:34:43] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:34:43] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:34:54] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:34:54] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:35:22] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:35:24] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:35:24] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:35:54] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:35:54] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:36:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:36:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:36:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:36:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:37:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:37:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:37:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:37:44] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:14] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:19] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:20] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:53] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:53] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:57] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:38:57] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:39:10] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:39:10] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:39:22] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:39:22] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:39:29] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:39:59] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:39:59] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:40:29] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:40:29] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:40:59] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:40:59] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:41:12] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:41:12] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:42:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:42:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:42:53] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:42:53] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:43:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:43:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:43:53] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:43:53] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:44:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:44:23] [::1] [/newwww/courier/api/stats.php] Exception: Unknown column 'value' in 'field list' in C:\xampp\htdocs\newwww\lib\Settings.php on line 41
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(41): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:44:53] [::1] [/newwww/courier/api/stats.php] Exception: Table 'shipping.app_settings' doesn't exist in C:\xampp\htdocs\newwww\lib\Settings.php on line 43
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(43): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:44:53] [::1] [/newwww/courier/api/stats.php] Exception: Table 'shipping.app_settings' doesn't exist in C:\xampp\htdocs\newwww\lib\Settings.php on line 43
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(43): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:45:23] [::1] [/newwww/courier/api/stats.php] Exception: Table 'shipping.app_settings' doesn't exist in C:\xampp\htdocs\newwww\lib\Settings.php on line 43
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(43): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 04:45:23] [::1] [/newwww/courier/api/stats.php] Exception: Table 'shipping.app_settings' doesn't exist in C:\xampp\htdocs\newwww\lib\Settings.php on line 43
+Stack trace:
+#0 C:\xampp\htdocs\newwww\lib\Settings.php(43): mysqli->prepare('SELECT `value` ...')
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(73): AppSettings::get(Object(mysqli), 'commission_cut_...', 'fixed')
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:31:37] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:32:07] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:32:37] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:33:07] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:33:37] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:34:13] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:35:54] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:36:49] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:38:50] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:39:20] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:39:51] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:40:26] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:40:56] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:41:26] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:41:56] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:42:26] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:43:11] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:43:26] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:43:59] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 06:46:28] [::1] [/newwww/courier/api/notifications.php?check_new=1] Exception: Unknown column 'p.courier_commission_net' in 'field list' in C:\xampp\htdocs\newwww\courier\api\notifications.php on line 36
+Stack trace:
+#0 C:\xampp\htdocs\newwww\courier\api\notifications.php(36): mysqli->prepare('SELECT p.id, p....')
+#1 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/stats.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/stats.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(7): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/counters.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/counters.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\counters.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/stats.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/stats.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(7): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/login.php?expired=1] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/login.php?expired=1] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\login.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/login.php?expired=1] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:35:45] [::1] [/newwww/courier/api/login.php?expired=1] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\login.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/stats.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/stats.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(7): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/shipments.php?page=1&page_size=50] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/shipments.php?page=1&page_size=50] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\shipments.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/stats.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/stats.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\stats.php(7): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/counters.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/counters.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\counters.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/counters.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:32] [::1] [/newwww/courier/api/counters.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\api\counters.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
