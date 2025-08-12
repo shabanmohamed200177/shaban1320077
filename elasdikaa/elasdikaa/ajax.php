@@ -829,6 +829,155 @@ try {
             
             echo json_encode(['status' => 'success', 'data' => $customers]);
             break;
+
+        case 'get_customer_settlement':
+            header('Content-Type: application/json; charset=utf-8');
+            $customer_id = isset($_POST['customer_id']) ? intval($_POST['customer_id']) : 0;
+            if (!$customer_id) {
+                echo json_encode(['status' => 'error', 'message' => 'معرف العميل غير صالح.']);
+                break;
+            }
+            include_once 'customer_settlement_utils.php';
+            $data = fetch_customer_settlement_data($conn, $customer_id);
+            echo json_encode(['status' => 'success', 'data' => $data]);
+            break;
+
+        case 'settle_customer_payout':
+            header('Content-Type: application/json; charset=utf-8');
+            $customer_id = isset($_POST['customer_id']) ? intval($_POST['customer_id']) : 0;
+            $parcel_ids = isset($_POST['parcel_ids']) ? $_POST['parcel_ids'] : [];
+            $notes = isset($_POST['notes']) ? trim($_POST['notes']) : '';
+            $partial_map = isset($_POST['partial_amounts']) && is_array($_POST['partial_amounts']) ? $_POST['partial_amounts'] : [];
+
+            if (!$customer_id || (!is_array($parcel_ids))) {
+                echo json_encode(['status' => 'error', 'message' => 'بيانات غير مكتملة.']);
+                break;
+            }
+
+            include_once 'customer_settlement_utils.php';
+            include_once 'lib/PaymentService.php';
+
+            $conn->begin_transaction();
+            try {
+                ensure_settlement_tables($conn);
+
+                // اجلب الشحنات المختارة للتحقق والحساب
+                $all_ids = array_map('intval', $parcel_ids);
+                if (empty($all_ids) && empty($partial_map)) {
+                    echo json_encode(['status' => 'error', 'message' => 'لا توجد شحنات للدفع.']);
+                    break;
+                }
+
+                $selected_ids = $all_ids;
+                if (!empty($partial_map)) {
+                    foreach ($partial_map as $pid => $amt) {
+                        $pid = intval($pid);
+                        if (!in_array($pid, $selected_ids, true)) {
+                            $selected_ids[] = $pid;
+                        }
+                    }
+                }
+
+                if (empty($selected_ids)) {
+                    echo json_encode(['status' => 'error', 'message' => 'لا توجد شحنات صالحة.']);
+                    break;
+                }
+
+                $placeholders = implode(',', array_fill(0, count($selected_ids), '?'));
+                $sql = "SELECT id, client_id_fk, cod_amount, shipping_fees, shipping_payer, status, payment_status FROM parcels WHERE id IN ($placeholders) FOR UPDATE";
+                $stmt = $conn->prepare($sql);
+                $types = str_repeat('i', count($selected_ids));
+                $stmt->bind_param($types, ...$selected_ids);
+                $stmt->execute();
+                $rs = $stmt->get_result();
+
+                $valid_ids = [];
+                $total_payout = 0.0;
+
+                while ($row = $rs->fetch_assoc()) {
+                    if ((int)$row['client_id_fk'] !== $customer_id) {
+                        continue; // تجاهل شحنة ليست لهذا العميل
+                    }
+                    $parcelId = (int)$row['id'];
+                    $net = compute_parcel_net_due($row);
+                    $alreadyPaid = get_parcel_paid_to_customer($conn, $parcelId);
+                    $remaining = max(0.0, $net - $alreadyPaid);
+
+                    $payAmount = 0.0;
+                    if (isset($partial_map[$parcelId])) {
+                        $amt = (float)$partial_map[$parcelId];
+                        if ($amt > 0) {
+                            $payAmount = min($remaining, $amt);
+                        }
+                    } elseif (in_array($parcelId, $all_ids, true)) {
+                        // دفع كامل للشحنات المحددة
+                        $payAmount = $remaining;
+                    }
+
+                    if ($payAmount > 0) {
+                        $valid_ids[$parcelId] = $payAmount;
+                        $total_payout += $payAmount;
+                    }
+                }
+                $stmt->close();
+
+                if (empty($valid_ids)) {
+                    echo json_encode(['status' => 'error', 'message' => 'لم يتم العثور على شحنات صالحة للدفع.']);
+                    $conn->rollback();
+                    break;
+                }
+
+                // سجل رأس التسوية
+                $created_by = $_SESSION['login_name'] ?? 'system';
+                $hdr = $conn->prepare('INSERT INTO customer_payouts (customer_id, total_amount, notes, created_by, created_at) VALUES (?, ?, ?, ?, NOW())');
+                $hdr->bind_param('idss', $customer_id, $total_payout, $notes, $created_by);
+                $hdr->execute();
+                $payout_id = $conn->insert_id;
+                $hdr->close();
+
+                // تفاصيل التسوية وتحديث الشحنات
+                $det = $conn->prepare('INSERT INTO customer_payout_details (payout_id, customer_id, parcel_id, amount, notes, created_at) VALUES (?, ?, ?, ?, ?, NOW())');
+                foreach ($valid_ids as $pid => $amt) {
+                    $det->bind_param('iiids', $payout_id, $customer_id, $pid, $amt, $notes);
+                    $det->execute();
+
+                    // إذا اكتمل صافي المستحق، حدث حالة الشحنة إلى تم الدفع بنجاح
+                    $info = PaymentService::getPaymentInfo($conn, (int)$pid);
+                    $netTotal = (float)$info['total_to_collect'];
+                    $paidSoFar = (float)$info['paid_amount'];
+                    $delta = max(0.0, $netTotal - $paidSoFar);
+                    $willBePaid = min($delta, $amt);
+                    $newPaid = $paidSoFar + $willBePaid;
+                    $newStatus = $newPaid >= $netTotal ? 5 : 6; // 5 paid, 6 partial
+                    $newPaymentStatus = $newPaid >= $netTotal ? 'paid' : 'partial_paid';
+                    $upd = $conn->prepare("UPDATE parcels SET paid_amount = ?, payment_status = ?, status = ?, paid_at = CASE WHEN ? = 'paid' THEN NOW() ELSE paid_at END WHERE id = ?");
+                    $upd->bind_param('dsisi', $newPaid, $newPaymentStatus, $newStatus, $newPaymentStatus, $pid);
+                    $upd->execute();
+                    $upd->close();
+
+                    // سجل تتبع
+                    $trk = $conn->prepare('INSERT INTO parcel_tracks (parcel_id, status, date_created, remarks) VALUES (?, ?, NOW(), ?)');
+                    $remark = 'تسوية عميل بقيمة ' . number_format($amt, 2) . ' ج.م';
+                    $trk->bind_param('iis', $pid, $newStatus, $remark);
+                    $trk->execute();
+                    $trk->close();
+                }
+                $det->close();
+
+                // سجل حركة مالية في صندوق الخزينة (خارجية)
+                $branch_id = $_SESSION['login_branch_id'] ?? 0;
+                $cash = $conn->prepare("INSERT INTO cashbox_transactions (branch_id, type, relation_id, amount, direction, notes, created_at) VALUES (?, 'customer', ?, ?, 'out', ?, NOW())");
+                $cash->bind_param('iids', $branch_id, $customer_id, $total_payout, $notes);
+                $cash->execute();
+                $cash->close();
+
+                $conn->commit();
+                echo json_encode(['status' => 'success', 'message' => 'تمت التسوية بنجاح', 'payout_id' => $payout_id, 'total' => $total_payout]);
+            } catch (Throwable $e) {
+                $conn->rollback();
+                echo json_encode(['status' => 'error', 'message' => 'فشل التسوية: ' . $e->getMessage()]);
+            }
+            break;
             
         default:
             // في حالة عدم تطابق أي إجراء، يتم إرجاع خطأ
