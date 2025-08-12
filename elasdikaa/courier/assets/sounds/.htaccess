@@ -1,0 +1,16 @@
+# منع الوصول المباشر للملفات
+<Files "*.mp3">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# إعدادات MIME types
+AddType audio/mpeg .mp3
+AddType audio/wav .wav
+AddType audio/ogg .ogg
+
+# منع عرض محتويات المجلد
+Options -Indexes
+
+
+
