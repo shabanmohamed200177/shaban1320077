@@ -735,7 +735,8 @@ if ($is_ajax_request) {
         if ($paid_amount <= 0 && isset($row['partial_paid'])) {
             $paid_amount = floatval($row['partial_paid']);
         }
-        $due_to_sender = $paid_amount > 0 ? $paid_amount : $net_for_display;
+        $base_net = isset($row['net_amount']) ? floatval($row['net_amount']) : $net_for_display;
+        $due_to_sender = $paid_amount > 0 ? $paid_amount : $base_net;
     ?>
                                     <tr>
                                     <td class="text-center no-print">
@@ -755,7 +756,7 @@ if ($is_ajax_request) {
                                         <div><strong><?php echo number_format($shipping_fees, 2); ?></strong></div>
                                         <small class="text-muted"><?php echo ($shipping_payer === 'sender') ? 'على المرسل' : 'على المستلم'; ?></small>
                                     </td>
-                                    <td class="text-center"><strong class="text-primary"><?php echo number_format(max(0, ($paid_amount > 0 ? $paid_amount : $net_for_display)), 2); ?></strong></td>
+                                    <td class="text-center"><strong class="text-primary"><?php echo number_format(max(0, ($paid_amount > 0 ? $paid_amount : (isset($row['net_amount']) ? floatval($row['net_amount']) : $net_for_display))), 2); ?></strong></td>
                                     <td class="text-center">
                                         <?php
                                         $status_val = isset($row['status']) ? intval($row['status']) : 1;
