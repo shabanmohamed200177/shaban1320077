@@ -104,7 +104,8 @@ class PaymentService {
         string $source,
         ?string $note = null,
         ?int $collectedByCourierId = null,
-        ?string $collectedByName = null
+        ?string $collectedByName = null,
+        bool $amountIsNet = false
     ): array {
         if ($parcelId <= 0 || $amount <= 0) {
             throw new InvalidArgumentException('Invalid parcel or amount');
@@ -121,13 +122,12 @@ class PaymentService {
                 throw new RuntimeException('المبلغ المدفوع يتجاوز المتبقي. المتبقي: ' . number_format($remaining, 2));
             }
 
-            // احسب صافي ما يُعتبر مدفوعًا وفق اتجاه الشحنة والجهة التي تتحمل الشحن
+            // احسب صافي ما يُعتبر مدفوعًا
             $shipmentDirection = (string)($info['shipment_direction'] ?? 'to_agent');
             $shippingPayer = (string)($info['shipping_payer'] ?? 'sender');
             $deliveryAgentFee = (float)($info['delivery_agent_fee'] ?? 0);
             $shippingFees = (float)($info['shipping_fees'] ?? 0);
 
-            // الخصم الأساسي المطلوب تطبيقه لمرة واحدة لكل شحنة
             $baseDeduction = 0.0;
             if ($shipmentDirection === 'from_agent') {
                 $baseDeduction = $deliveryAgentFee; // خصم عمولة المندوب
@@ -135,36 +135,40 @@ class PaymentService {
                 $baseDeduction = $shippingFees; // خصم رسوم الشحن على الراسل
             }
 
-            // الخصم المتبقي الذي لم يُغطّ بعد عبر الدفعات السابقة
-            $rawCollectedSoFar = 0.0;
-            // احسب ما تم تحصيله بواسطة المندوب فقط لتغطية الخصم الأساسي
-            // إذا كان عمود source موجودًا سنستخدمه، وإلا نعتمد على collected_by_courier_id IS NOT NULL
-            $hasSourceCol = false;
-            $colRes = $conn->query("SHOW COLUMNS FROM parcel_collections LIKE 'source'");
-            if ($colRes && $colRes->num_rows > 0) { $hasSourceCol = true; }
-            if ($colRes) { $colRes->close(); }
-
-            if ($hasSourceCol) {
-                $sumStmt = $conn->prepare("SELECT COALESCE(SUM(amount),0) AS s FROM parcel_collections WHERE parcel_id = ? AND source = 'courier'");
-                $sumStmt->bind_param('i', $parcelId);
+            $deductionAppliedNow = 0.0;
+            if ($amountIsNet === true) {
+                // المبلغ المدخل صافي للعميل، لا نطبّق أي خصم هنا
+                $effectivePaid = $amount;
             } else {
-                $sumStmt = $conn->prepare('SELECT COALESCE(SUM(amount),0) AS s FROM parcel_collections WHERE parcel_id = ? AND collected_by_courier_id IS NOT NULL');
-                $sumStmt->bind_param('i', $parcelId);
-            }
-            $sumStmt->execute();
-            $sumRes = $sumStmt->get_result()->fetch_assoc();
-            $sumStmt->close();
-            if ($sumRes && isset($sumRes['s'])) {
-                $rawCollectedSoFar = (float)$sumRes['s'];
-            }
+                // الخصم المتبقي الذي لم يُغطّ بعد عبر الدفعات السابقة (تحصيل المندوب فقط)
+                $rawCollectedSoFar = 0.0;
+                $hasSourceCol = false;
+                $colRes = $conn->query("SHOW COLUMNS FROM parcel_collections LIKE 'source'");
+                if ($colRes && $colRes->num_rows > 0) { $hasSourceCol = true; }
+                if ($colRes) { $colRes->close(); }
 
-            $alreadyCovered = min($baseDeduction, $rawCollectedSoFar);
-            $deductionRemaining = max(0.0, $baseDeduction - $alreadyCovered);
+                if ($hasSourceCol) {
+                    $sumStmt = $conn->prepare("SELECT COALESCE(SUM(amount),0) AS s FROM parcel_collections WHERE parcel_id = ? AND source = 'courier'");
+                    $sumStmt->bind_param('i', $parcelId);
+                } else {
+                    $sumStmt = $conn->prepare('SELECT COALESCE(SUM(amount),0) AS s FROM parcel_collections WHERE parcel_id = ? AND collected_by_courier_id IS NOT NULL');
+                    $sumStmt->bind_param('i', $parcelId);
+                }
+                $sumStmt->execute();
+                $sumRes = $sumStmt->get_result()->fetch_assoc();
+                $sumStmt->close();
+                if ($sumRes && isset($sumRes['s'])) {
+                    $rawCollectedSoFar = (float)$sumRes['s'];
+                }
 
-            // الجزء المخصوم من هذه الدفعة هو الحد الأدنى بين الدفعة والخصم المتبقي
-            $deductionAppliedNow = min($amount, $deductionRemaining);
-            $effectivePaid = max(0.0, $amount - $deductionAppliedNow); // صافي ما يضاف إلى paid_amount
-            $displayPaid = $effectivePaid; // ما نعرضه للمستخدم كصافي مدفوع
+                $alreadyCovered = min($baseDeduction, $rawCollectedSoFar);
+                $deductionRemaining = max(0.0, $baseDeduction - $alreadyCovered);
+
+                // الجزء المخصوم من هذه الدفعة هو الحد الأدنى بين الدفعة والخصم المتبقي
+                $deductionAppliedNow = min($amount, $deductionRemaining);
+                $effectivePaid = max(0.0, $amount - $deductionAppliedNow);
+            }
+            $displayPaid = $effectivePaid;
 
             $newPaid = $paidSoFar + $effectivePaid;
             $newRemaining = $totalToCollect - $newPaid;

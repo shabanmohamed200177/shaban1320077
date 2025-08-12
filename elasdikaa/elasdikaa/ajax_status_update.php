@@ -81,7 +81,8 @@ try {
                 $cstmt->close();
             }
             $adminName = $_SESSION['name'] ?? $_SESSION['username'] ?? 'admin';
-            $result = PaymentService::applyPartialPayment($conn, $parcel_id, $partial_amount, 'admin', $payment_note, $courier_id_for_collection, $adminName);
+            // Treat the entered amount as NET to client
+            $result = PaymentService::applyPartialPayment($conn, $parcel_id, $partial_amount, 'admin', $payment_note, $courier_id_for_collection, $adminName, true);
 
             // رسالة نجاح موحّدة
             $message = 'تم تسجيل الدفع الجزئي: ' . number_format($result['payment_amount'], 2) . ' جنيه. إجمالي المدفوع: ' . number_format($result['total_paid'], 2) . ' جنيه. المتبقي: ' . number_format($result['remaining_balance'], 2) . ' جنيه';
