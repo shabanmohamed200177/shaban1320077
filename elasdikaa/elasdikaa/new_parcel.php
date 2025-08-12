@@ -398,8 +398,8 @@ if ($status_result) {
                                             <input type="text" id="np_paid_amount" class="form-control readonly-field" readonly value="0.00">
                                         </div>
                                         <div class="col-md-3">
-                                            <label class="form-label">المتبقي</label>
-                                            <input type="text" id="np_remaining" class="form-control readonly-field" readonly value="0.00">
+                                            <label class="form-label">المتبقي للتحصيل من المستلم</label>
+                                            <input type="text" id="np_remaining_collect" class="form-control readonly-field" readonly value="0.00">
                                         </div>
                                         <div class="col-md-3">
                                             <label class="form-label">حالة الدفع</label>
@@ -1229,7 +1229,7 @@ $(document).ready(function(){
                     const pstatus = d.payment_status || (d.parcel && d.parcel.payment_status) || 'unpaid';
                     $('#np_total_to_collect').val(total.toFixed(2));
                     $('#np_paid_amount').val(paid.toFixed(2));
-                    $('#np_remaining').val(remaining.toFixed(2));
+                    $('#np_remaining_collect').val(remaining.toFixed(2));
                     $('#np_payment_status').val(pstatus === 'paid' ? 'مدفوع كامل' : (pstatus === 'partial_paid' ? 'مدفوع جزئي' : 'غير مدفوع'));
                 }
             }
