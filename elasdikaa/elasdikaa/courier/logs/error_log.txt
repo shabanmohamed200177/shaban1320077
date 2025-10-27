@@ -1,0 +1,20 @@
+[2025-08-11 13:36:33] [::1] [/newwww/courier/dashboard.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:33] [::1] [/newwww/courier/dashboard.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\dashboard.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:39] [::1] [/newwww/courier/dashboard.php] [E_WARNING] Undefined variable $conn in C:\xampp\htdocs\newwww\middleware.php on line 215
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------
+[2025-08-11 13:36:39] [::1] [/newwww/courier/dashboard.php] Exception: Call to a member function prepare() on null in C:\xampp\htdocs\newwww\middleware.php on line 215
+Stack trace:
+#0 C:\xampp\htdocs\newwww\middleware.php(47): SecurityMiddleware::restoreCourierSessionFromRememberCookie()
+#1 C:\xampp\htdocs\newwww\courier\dashboard.php(6): SecurityMiddleware::checkSession()
+#2 {main}
+User Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36 Edg/139.0.0.0
+----------------------------------------

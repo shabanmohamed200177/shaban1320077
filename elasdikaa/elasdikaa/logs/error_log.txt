@@ -1,0 +1,410 @@
+[2025-08-11 03:43:44] [::1] [/newwww/index.php?page=agent_list] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_list.php on line 260
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 03:44:22] [::1] [/newwww/index.php?page=agent_list] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_list.php on line 260
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 03:46:15] [::1] [/newwww/index.php?page=agent_list] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_list.php on line 260
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 22:47:22] [::1] [/newwww/ajax.php?action=add_governorate] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\admin_class.php on line 896
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 03:48:33] [::1] [/newwww/index.php?page=agent_list] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_list.php on line 260
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 03:48:45] [::1] [/newwww/index.php?page=agent_list] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_list.php on line 260
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 03:48:46] [::1] [/newwww/index.php?page=agent_list] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_list.php on line 260
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 03:48:46] [::1] [/newwww/index.php?page=agent_list] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_list.php on line 260
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 22:51:10] [::1] [/newwww/ajax.php?action=save_branch] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\admin_class.php on line 421
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:14:12] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 1)
+#1 C:\xampp\htdocs\newwww\ajax.php(120): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:25:33] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 1)
+#1 C:\xampp\htdocs\newwww\ajax.php(120): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:25:43] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 1)
+#1 C:\xampp\htdocs\newwww\ajax.php(120): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:27:32] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 1)
+#1 C:\xampp\htdocs\newwww\ajax.php(120): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:31:42] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 1)
+#1 C:\xampp\htdocs\newwww\ajax.php(119): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:33:00] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 3)
+#1 C:\xampp\htdocs\newwww\ajax.php(119): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:34:39] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 3)
+#1 C:\xampp\htdocs\newwww\ajax.php(119): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-10 23:57:42] [::1] [/newwww/ajax.php?action=save_courier] Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\newwww\admin_class.php on line 496
+Stack trace:
+#0 C:\xampp\htdocs\newwww\admin_class.php(496): mysqli_stmt->bind_param('s', 'shabanmohamed14...', 3)
+#1 C:\xampp\htdocs\newwww\ajax.php(119): Action->save_courier()
+#2 {main}
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:28:45] [::1] [/newwww/index.php?page=manage_courier_area] [E_WARNING] Undefined array key "area_id" in C:\xampp\htdocs\newwww\manage_courier_area.php on line 3
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:28:45] [::1] [/newwww/index.php?page=manage_courier_area] [E_WARNING] Trying to access array offset on value of type null in C:\xampp\htdocs\newwww\manage_courier_area.php on line 13
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:28:45] [::1] [/newwww/index.php?page=manage_courier_area] [E_DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\manage_courier_area.php on line 13
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:29:46] [::1] [/newwww/index.php?page=manage_courier_area] [E_WARNING] Undefined array key "area_id" in C:\xampp\htdocs\newwww\manage_courier_area.php on line 3
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:29:46] [::1] [/newwww/index.php?page=manage_courier_area] [E_WARNING] Trying to access array offset on value of type null in C:\xampp\htdocs\newwww\manage_courier_area.php on line 13
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:29:46] [::1] [/newwww/index.php?page=manage_courier_area] [E_DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\manage_courier_area.php on line 13
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 287
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 293
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 299
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 367
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 371
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 375
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 506
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 515
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 526
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:40:07] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 532
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 287
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 293
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 299
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 367
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 371
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 375
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 506
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 515
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 526
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 06:52:23] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 532
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 25
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 26
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 27
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 31
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 32
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 33
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 37
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 46
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 50
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 51
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 52
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 55
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 00:53:15] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 62
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 25
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 26
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 27
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 31
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 32
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 33
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 37
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 46
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 50
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 51
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 52
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 55
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:04:21] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 62
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 25
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 26
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 27
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 31
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 32
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 33
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 37
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 46
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 50
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 51
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 52
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 55
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:05:09] [::1] [/newwww/save_parcel.php] [E_DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in C:\xampp\htdocs\newwww\save_parcel.php on line 62
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 287
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 293
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 299
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 367
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 371
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 375
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 506
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 515
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 526
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 07:08:36] [::1] [/newwww/index.php?page=agent_profile&id=1] [E_DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\newwww\agent_profile.php on line 532
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 01:18:55] [::1] [/newwww/parcel_details.php?id=2] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 03:51:57] [::1] [/newwww/parcel_details.php?id=5] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 10:22:15] [::1] [/newwww/index.php?page=parcel_details&id=3] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 04:37:01] [::1] [/newwww/parcel_details.php?id=8] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 05:04:01] [::1] [/newwww/parcel_details.php?id=11] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 15:47:13] [::1] [/newwww/parcel_details.php?id=6] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 16:06:29] [::1] [/newwww/parcel_details.php?id=3] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 16:15:15] [::1] [/newwww/parcel_details.php?id=10] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 17:05:05] [::1] [/newwww/parcel_details.php?id=11] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 17:12:26] [::1] [/newwww/parcel_details.php?id=7] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 23:17:02] [::1] [/newwww/index.php?page=parcel_details&id=12] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 827
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 17:59:51] [::1] [/newwww/parcel_details.php?id=13] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 18:00:16] [::1] [/newwww/parcel_details.php?id=10] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 00:11:53] [::1] [/newwww/index.php?page=parcel_details&id=13] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 00:18:18] [::1] [/newwww/index.php?page=parcel_details&id=13] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 18:18:35] [::1] [/newwww/parcel_details.php?id=13] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:16:29] [::1] [/newwww/parcel_details.php?id=2] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:17:00] [::1] [/newwww/parcel_details.php?id=3] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:21:10] [::1] [/newwww/parcel_details.php?id=8] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:25:43] [::1] [/newwww/parcel_details.php?id=5] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:26:19] [::1] [/newwww/parcel_details.php?id=1] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:36:32] [::1] [/newwww/parcel_details.php?id=14] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:43:32] [::1] [/newwww/parcel_details.php?id=16] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:49:13] [::1] [/newwww/parcel_details.php?id=15] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:55:47] [::1] [/newwww/parcel_details.php?id=16] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-11 19:55:52] [::1] [/newwww/parcel_details.php?id=17] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 02:10:41] [::1] [/newwww/index.php?page=manage_courier_area] [E_WARNING] Undefined array key "area_id" in C:\xampp\htdocs\newwww\manage_courier_area.php on line 3
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 02:10:41] [::1] [/newwww/index.php?page=manage_courier_area] [E_WARNING] Trying to access array offset on value of type null in C:\xampp\htdocs\newwww\manage_courier_area.php on line 13
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 02:10:41] [::1] [/newwww/index.php?page=manage_courier_area] [E_DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\newwww\manage_courier_area.php on line 13
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 00:04:25] [::1] [/elasdikaa/parcel_details.php?id=11] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\elasdikaa\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 00:13:29] [::1] [/elasdikaa/parcel_details.php?id=8] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\elasdikaa\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 00:22:02] [::1] [/elasdikaa/parcel_details.php?id=1] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\elasdikaa\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 00:22:16] [::1] [/elasdikaa/parcel_details.php?id=1] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\elasdikaa\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
+[2025-08-12 00:26:05] [::1] [/elasdikaa/parcel_details.php?id=12] [E_DEPRECATED] addslashes(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\elasdikaa\parcel_details.php on line 857
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+----------------------------------------
